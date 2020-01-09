@@ -37,3 +37,12 @@ footer {
     padding-bottom: 10px;
     border-bottom: solid 1px grey;
 }
+.last-updated, #modif {
+    display: inline;
+    font-style: italic;
+    color: #B23500;
+    font-weight: bold;
+}
+.modified-div {
+    margin-top: -30px;
+}
