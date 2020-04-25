@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway&display=swap');
+@media screen and (max-width: 320px){
+    content {
+        background-color: #3f4045;
+    }
+    body{
+        background-color: #ffd9da;
+        font-family: "Raleway", Helvetica, sans-serif;
+        color: #3f4045;
+        margin: 0 auto;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "GFS Didot", Georgia, serif;
+    }
+}
