@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Raleway&display=swap');
+body {
+    margin: 0 auto;
+    border-radius: 15px;
+    line-height: 1.7em;
+    background: #e6e6e6;
+    color: #3f4045;
+}
+.content {
+    background-color: #84A98C;
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+header {
+    text-align: center;
+    line-height: 5em;
+    /*margin-top: 15px;*/
+}
+.profile-pic {
+    width: 170px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+main{
+    background-color: white;
+    font-family: "Raleway", Helvetica, sans-serif;
+    color: #3f4045;
+    margin: 0 auto;
+    padding-bottom: 7px;
+    line-height: 2em;
+    font-size: 1.3em;
+}
+ul {
+    list-style: none;
+}
+h1 {
+    font-family: "Parisienne", cursive;
+    font-weight: lighter;
+    font-size: 4em;
+    padding-top: 30px;
+    margin-bottom: -5px;
+}
+footer {
+    line-height: 1.25em;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 1px;
+    font-size: 1.1em;
+}
+.pageHeader {
+    padding: 15px 0 10px 7px;
+   
+    border-bottom: solid 1px grey;
+}
+.modified-div {
+    margin-top: -15px;
+}

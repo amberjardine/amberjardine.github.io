@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway&display=swap');
-@media screen and (max-width: 320px){
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+@media screen and (max-width: 500px){
     content {
-        background-color: #3f4045;
+        max-width: 90%;
+        border-radius: 15px;
     }
     body{
         background-color: #ffd9da;
@@ -9,7 +10,22 @@
         color: #3f4045;
         margin: 0 auto;
     }
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "GFS Didot", Georgia, serif;
+    h1 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-style: italic;
+        font-size: 4em;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .page-title {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    .profile-pic {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        margin-left: 120px;
     }
 }

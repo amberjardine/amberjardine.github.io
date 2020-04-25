@@ -4,17 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Amber Jardine | Assignment Portal</title> 
-        <link rel="stylesheet" href="/css/mobile.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="javascript/portal.js"></script>
     </head>
+    <body>
     <div class="content">
         <header> 
-            <h1>Amber Jardine</h1>
-            <img src="/images/rsz_profile-pic.jpg" alt="picture of Amber Jardine">
             
+            <img src="images/rsz_profile-pic.jpg" alt="picture of Amber Jardine" class="profile-pic">
+            <h1 class="page-title">Amber Jardine</h1>
         </header>
-        <body>
+        <main>
         
-            <h3>WDD 230: Assignment Portal</h3>
+            <h2 class="pageHeader">WDD 230: Assignment Portal</h3>
             <ul>
                 <li>Lesson 2 | <a href="#">Design Principles</a></li>
                 <li>Lesson 3 | <a href="#">Weather Site Plane</a></li>
@@ -22,10 +25,11 @@
                 <li>Lesson 5 | <a href="#">Link</a></li>
                 <li>Lesson 6 | <a href="#">Link</a></li>
             </ul>
-        </body>
+        </main>
         <footer>
-        <p> &copy <span id="currentYear"></span> | Amber Jardine | <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho</p>
-        <p class="modified"></p>
+            <p> &copy <span id="fullyear"></span> | Amber Jardine | <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho</p>
+            <div class="modified-div"><p>Last Updated: <span id="modified"></span></p></div>
         </footer>
     </div>
+</body>
 </html>

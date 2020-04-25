@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway&display=swap');
+body {
+    max-width: 960px;
+    background-color: white;
+    margin: 0 auto;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);*/
+    border-radius: 15px;
+    font-family: "Raleway", Helvetica, sans-serif;
+    line-height: 1.7em;
+}
+header {
+    background-color: #81d2c7;
+    line-height: 5em;
+    text-align: center;
+    border-radius: 10px;
+}
+h1 {
+    font-family: "GFS Didot", Georgia, serif;
+    font-size: 3em;
+    padding-top: 15px; 
+}
+footer {
+    background-color: #81d2c7;
+    line-height: 3em;
+    text-align: center;
+    border-radius: 10px;
+}
+.profile-pic {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.pageHeader {
+    padding-bottom: 10px;
+    border-bottom: solid 1px grey;
+}
