@@ -42,7 +42,6 @@ ul {
 h1 {
     font-family: "Parisienne", cursive;
     font-weight: lighter;
-    font-size: 4em;
     padding-top: 30px;
     margin-bottom: -5px;
 }
@@ -55,10 +54,12 @@ footer {
 }
 .pageHeader {
     padding: 15px 0 10px 7px;
-   
     border-bottom: solid 1px grey;
 }
 .modified-div {
     margin-top: -15px;
+}
+.page-title {
+    font-size: 4em;
 }
 }

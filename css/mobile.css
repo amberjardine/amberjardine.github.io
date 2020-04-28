@@ -10,8 +10,7 @@
         margin: 0 auto;
     }
     h1 {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: 10em;
+        font-family: "Parisienne", cursive;
     }
     header {
         display: grid;
@@ -20,10 +19,11 @@
     .page-title {
         grid-column: 1/-1;
         grid-row: 1/2;
+        font-size: 7em;
+        margin-bottom: -10px;
     }
     .profile-pic {
         grid-column: 1/-1;
         grid-row: 2/3;
         margin-left: 120px;
     }
-
