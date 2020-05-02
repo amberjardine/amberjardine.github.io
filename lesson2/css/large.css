@@ -1,4 +1,4 @@
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 900px) {
     body {
         margin: 0 auto;
         border-radius: 15px;
@@ -7,11 +7,14 @@
         color: #3f4045;
     }
     .content {
-        background-color: #84A98C;
-        max-width: 960px;
+        background-color: #28666E;
+        max-width: 90%;
         margin: 0 auto;
         border-radius: 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    }
+    header {
+        color: white;
     }
     main {
         background-color: white;
@@ -26,12 +29,16 @@
     }
     .alignment {
         grid-column: 1/2;
+        grid-row: 1/-1;
     }
     .white-space {
         grid-column: 2/3;
+        grid-row: 1/-1;
     }
     .proximity {
         grid-column: 3/4;
+        grid-row: 1/-1;
     }
+    
     
 }

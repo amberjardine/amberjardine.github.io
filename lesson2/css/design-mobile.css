@@ -1,13 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Raleway&display=swap');
 .content {
     max-width: 90%;
     border-radius: 15px;
+    margin: 0 auto;
+    background: white;
 }
 body{
-    background-color: #84A98C;
+    background-color: #e6e6e6;
     font-family: "Raleway", Helvetica, sans-serif;
-    color: #3f4045;
+    color: #033F63;
     margin: 0 auto;
 }
-h1 {
-    font-family: "Parisienne", cursive;
+header {
+    background: #28666E;
+    text-align: center;
+    line-height: 1.7em;
+    font-size: 1.7em;
+    color: white;
+    padding: 5px 0 5px 0;
+
+    /*margin-top: 15px;*/
 }
+h1{
+    margin-bottom: -10px;
+    font-style: italic;
+}
+main {
+    margin: 0 auto;
+}
+footer {
+    background: #28666E;
+    line-height: 1.25em;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 1px;
+    font-size: 1.1em;
+    color: white;
+}
+.screenshot-1, .screenshot-2, .screenshot-3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.p1, .p2, .p3 {
+    padding: 30px 15px 30px 15px;
+    margin: 15px;
+    font-size: 1.2em;
+}
+.alignment-title, .white-space-title, .proximity-title {
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.alignment, .white-space, .proximity {
+    background: #e6e6e6;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+main h4 {
+    text-align: center;
+    margin-top: -15px;
+    font-style: italic;
+}
+

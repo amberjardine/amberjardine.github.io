@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Parisienne|Raleway&display=swap');
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 600px) {
 body {
     margin: 0 auto;
     border-radius: 15px;
