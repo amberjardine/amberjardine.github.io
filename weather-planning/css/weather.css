@@ -23,6 +23,12 @@ body {
     font-size: 1.8em;
     color: #FFDA48;
 }
+.page-header-sub {
+    padding: 25px;
+    margin-top: -20px;
+    font-size: 1.8em;
+    color: #FFDA48;
+}
 main {
     background-color: #f3f3f3;
     line-height: 1.5em;
@@ -330,10 +336,13 @@ nav {
         background: #53B3CB;
         color: #252931;
     }
-    .page-header {
+    .page-header, .page-header-sub{
         font-size: 3em;
         text-align: right;
         line-height: 70px;
+        white-space: pre-line;
+    }
+    .page-header-sub {
         white-space: pre-line;
     }
     .weather-logo {
@@ -342,6 +351,9 @@ nav {
     }
     header {
         margin-bottom: -25px;
+    }
+    .sub-pages {
+        margin-bottom: -32px;
     }
     .personas {
         display: grid;
