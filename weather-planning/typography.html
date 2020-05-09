@@ -6,15 +6,14 @@
     <title>Weather Site Plan | Typography</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/weather.css">
-    <link rel="stylesheet" href="css/menu.css">
     <script src="js/weather.js"></script>
 </head>
 <body>
     <div class="content">
-      <header>
+      <header class="sub-pages">
           <img src="images/rsz_updated-logo.png" alt="illustration of sun behind a cloud" class="weather-logo">
-          <h1 class="page-header">Optimal Sunshine</h1>
-          <nav>
+          <h1 class="page-header-sub">Optimal<br> Sunshine</h1>
+          <nav class="navigation">
               <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="audience.html">Audience</a></li>
@@ -40,7 +39,20 @@
             </div>
       </header>
       <main>
-        <h3>Typography</h3>
+        <h3 class="typography-header">Typography</h3>
+        <div class="type">
+          <div class="font-1">
+            <h4>Rozha One</h4>
+            <p>This font will be used for all headings.</p>
+            <p>Font Family: Rozha One, serif</p>
+          </div>
+          <div class="font-2">
+            <h4>Roboto</h4>
+            <p>This font will be used for all body and navigation text.</p>
+            <p>Font Family: Roboto, sans-serif</p>
+          </div>
+          <div class="empty"></div>
+        </div>
       </main>
       <footer>
         <p> &copy; <span id="fullyear"></span> | Amber Jardine | <a href="https://developer.mozilla.org/en-US/" target="_blank" class="footer-link">MDN Documentation Site</a> | BYU-Idaho</p>

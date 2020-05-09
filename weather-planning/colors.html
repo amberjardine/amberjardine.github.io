@@ -6,15 +6,14 @@
     <title>Weather Site Plan | Colors</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/weather.css">
-    <link rel="stylesheet" href="css/menu.css">
     <script src="js/weather.js"></script>
 </head>
 <body>
     <div class="content">
-        <header>
+        <header class="sub-pages">
             <img src="images/rsz_updated-logo.png" alt="illustration of sun behind a cloud" class="weather-logo">
-            <h1 class="page-header">Optimal Sunshine</h1>
-            <nav>
+            <h1 class="page-header-sub">Optimal<br> Sunshine</h1>
+            <nav class="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="audience.html">Audience</a></li>
@@ -22,6 +21,7 @@
                     <li><a href="typography.html">Typography</a></li>
                 </ul>
             </nav>
+            
             <div class="menu-wrap">
                 <input type="checkbox" class="toggler">
                 <div class="hamburger"><div></div></div>
@@ -40,19 +40,33 @@
               </div>
         </header>
         <main>
-            <h3>Colors</h3>
-            <h4>Primary: Sapphire Blue</h4>
-            <div class="primary"><p>#1A6697</p></div>
-            <p>This will apply to the header and footer of each page.</p>
-            <h4>Secondary: Mustard</h4>
-            <div class="secondary"><p>#FFDA48</p></div>
-            <p>This will be the color of the font is the header and footer.</p>
-            <h4>Accent #1: Maximum Blue</h4>
-            <div class="accent-1"><p>#53B3CB</p></div>
-            <h4>Accent #2: Selective Yellow</h4>
-            <div class="accent-2"><p>#F8B713</p></div>
-            <h4>Main Font Color: Gunmetal</h4>
-            <div class="font-color"><p>#252931</p></div>
+          
+            <h3 class="colors-header">Colors</h3>
+            <div class="colors">
+              <div class="color-1">
+                <h4>Primary: Sapphire Blue</h4>
+                  <div class="primary"><p>#1A6697</p></div>
+                  <p class="primary-p">This will apply to the header and footer of each page.</p>
+              </div>
+              <div class="color-2">
+                <h4>Secondary: Mustard</h4>
+                  <div class="secondary"><p>#FFDA48</p></div>
+                  <p class="secondary-p">This will be the color of the font is the header and footer.</p>
+              </div>
+              <div class="color-3">
+                <h4>Accent #1: Maximum Blue</h4>
+                  <div class="accent-1"><p>#53B3CB</p></div>
+                  <p class="accent-1-p">This will be used for the navigation.</p>
+              </div>
+              <!-- <h4>Accent #2: Selective Yellow</h4>
+                <div class="accent-2"><p>#F8B713</p></div>
+                <p class="accent-2-p">This will be used for something.</p> -->
+              <div class="color-4">
+                <h4>Accent #2: Gunmetal</h4>
+                  <div class="font-color"><p>#252931</p></div>
+                  <p class="font-p">This will be the main color of the font.</p>
+              </div>
+            </div>
         </main>
         <footer>
             <p> &copy; <span id="fullyear"></span> | Amber Jardine | <a href="https://developer.mozilla.org/en-US/" target="_blank" class="footer-link">MDN Documentation Site</a> | BYU-Idaho</p>
