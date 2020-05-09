@@ -11,7 +11,7 @@ nav {
     z-index: 1;
 }
 .menu-wrap .toggler {
-    position: fixed;
+    position: absolute;
     top: 5px;
     right: 60px;
     z-index: 2;
@@ -21,7 +21,7 @@ nav {
     opacity: 0;
 }
 .menu-wrap .hamburger {
-    position: fixed;
+    position: absolute;
     top: 5px;
     right: 65px;
     z-index: 1;
