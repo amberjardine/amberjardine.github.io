@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Rozha+One&display=swap');
 body {
     font-family: "Roboto", Helvetica, sans-serif;
+    background: #e6e6e6;
 }
 .content {
     background-color: #1a6697;
+    margin: 0 auto;
+    border-radius: 25px;
+    
+}
+.sunshine-header {
+    padding-left: 20px;
+    margin-top: -5px;
+}
+.tagline {
+    font-size: 1.5em;
+    padding-left: 20px;
+    margin-top: -15px;
 }
 main {
     background-color: white;
@@ -61,7 +74,6 @@ nav ul li a:hover {
     margin: 15px;
 }
 header {
-    background-color: #1a6697;
     color: #ffda48;
 }
 footer {
@@ -104,7 +116,12 @@ main div {
         float: right;
         margin-right: 20px;
         margin-top: 30px;
-        font-size: 2.5em;
+        font-size: 2.2em;
+    }
+    .tagline {
+        float: right;
+        margin-top: -150px;
+        margin-right: 21px;
     }
     .logo {
         width: 200px;
@@ -113,23 +130,45 @@ main div {
         line-height: 2em;
     }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
     main div {
         max-width: 850px;
     }
-    .responsive{
-        display: none;
-    }
-    .navigation {
+    /*header {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        grid-gap: 20px;
     }
-    .navigation a {
-        margin: auto;
-        font-size: 0.85em;
+    .sunshine-header {
+        grid-column: 2/5;
+        font-size: 4em;
+    }
+    .logo {
+        grid-row: 1/-1;
+    }
+    .tagline {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }*/
+    header {
+        height: 220px;
+    }
+    .sunshine-header {
+        float: none;
+        font-size: 3em;
         text-align: center;
+        margin-top: -180px;
     }
-    .navigation li:first-child {
-        display: none;
+    .tagline {
+        margin-top: 15px;
+        float: none;
+        text-align: center;
+        font-size: 2em;
+    }
+    .content {
+        max-width: 90%;
+        margin: 0 auto;
+        border-radius: 25px;
     }
 }
