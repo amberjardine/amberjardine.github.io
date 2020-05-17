@@ -108,6 +108,7 @@ main div {
     main div {
         max-width: 600px;
         margin: 0 auto;
+        margin-top: 10px;
     }
     .preston {
         font-size: 2.5em;
