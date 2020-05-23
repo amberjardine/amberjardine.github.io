@@ -1,6 +1,26 @@
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
+function banner() {
+    let dayName = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ];
+    let date = new Date();
+    let dateCheck = dayName[date.getDay()];
+    if (dateCheck = "Friday") {
+        document.getElementById("friday-banner").style.display = "block";
+    }
+    else {
+        document.getElementById("friday-banner").style.display = "none";
+    }
+}
+
 function dates() {
    
 

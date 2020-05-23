@@ -6,7 +6,8 @@ body {
 .content {
     background-color: #1a6697;
     margin: 0 auto;
-    border-radius: 25px;;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .sunshine-header {
     padding-left: 20px;
@@ -165,6 +166,14 @@ main div {
 }
 .contact-info {
     border: none;
+}
+#friday-banner {
+    background-color: #ffda48;
+    text-align: center;
+    line-height: 3.5em;
+    margin-bottom: -18px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 @media screen and (min-width: 600px) {
