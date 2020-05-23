@@ -6,8 +6,7 @@ body {
 .content {
     background-color: #1a6697;
     margin: 0 auto;
-    border-radius: 25px;
-    
+    border-radius: 25px;;
 }
 .sunshine-header {
     padding-left: 20px;
@@ -30,7 +29,7 @@ nav {
     background-color: #252931;
     color: #53B3CB;
     line-height: 2.3em;
-    margin-bottom: -18px;
+    margin-bottom: -16px;
 }
 
 nav ul li a {
@@ -91,9 +90,8 @@ footer a {
 main div {
     padding: 5px;
     margin: 10px;
-    border: 2px dotted #252931;
+    border-top: 2px dotted #252931;
     text-align: center;
-
 }
 .empty {
     height: 5px;
@@ -114,15 +112,23 @@ main div {
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.summary {
+    margin: 10px auto;
+    background-color: rgba(255, 218, 72, 0.9);
+    border: 1px solid #333;
+    width: 80%;
+    height: 150px;
+}
 .summary h3 {
     margin-top: 10px;
     font-size: 1.3em;
     text-decoration: underline;
+    
 }
 .summary-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 7px;
     margin-top: -25px;
     font-size: 0.8em;
     line-height: 1.35em;
@@ -130,13 +136,36 @@ main div {
 .left {
     grid-column: 1/2;
     text-align: right;
-    font-weight: bolder;
 }
 .right {
     grid-column: 2/3;
     text-align: left;
+    color: #1a6697;
+    font-weight: bolder;
 }
-
+.forecast {
+    display: none;
+}
+.div4 {
+    background-color: #ffda48;
+    border: none;
+}
+.contact {
+    border: none;
+    margin: 0 auto;
+}
+.contact img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-info h4 {
+    font-size: 1.2em;
+}
+.contact-info {
+    border: none;
+}
 
 @media screen and (min-width: 600px) {
     main div {
@@ -179,6 +208,7 @@ main div {
     .navigation li a {
         display: block;
         text-align: center;
+        font-size: 0.61em;
     }
     .div3 {
         display: grid;
@@ -217,29 +247,46 @@ main div {
         left: 20px;
         top: 10px;
     }
+    .forecast {
+        display: block;
+        border: none;
+    }
+    .forecast img {
+        width: 75px;
+        border-radius: 25px;
+    }
+    
+    .forecast-table {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+        border: 1px solid black;
+        background-color: #ffda48;
+    }
+    .forecast-header {
+        border: 1px solid black;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: -15px;
+    }
+    .icons {
+        border: none;
+    }
+    .div4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact img{
+        grid-column: 1/2;
+    }
+    .contact-info {
+        grid-column: 2/3;
+    }
     
 }
 @media screen and (min-width: 950px) {
     main div {
         max-width: 850px;
     }
-    /*header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100px 100px;
-        grid-gap: 20px;
-    }
-    .sunshine-header {
-        grid-column: 2/5;
-        font-size: 4em;
-    }
-    .logo {
-        grid-row: 1/-1;
-    }
-    .tagline {
-        grid-column: 2/4;
-        grid-row: 2/3;
-    }*/
     header {
         height: 220px;
     }
@@ -259,5 +306,11 @@ main div {
         max-width: 90%;
         margin: 0 auto;
         border-radius: 25px;
+    }
+    .navigation li a {
+        font-size: 0.9em;
+    }
+    .contact-info {
+        font-size: 1.3em;
     }
 }
