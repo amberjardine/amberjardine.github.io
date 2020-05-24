@@ -13,7 +13,7 @@ function banner() {
     ];
     let date = new Date();
     let dateCheck = dayName[date.getDay()];
-    if (dateCheck = "Friday") {
+    if (dateCheck === "Friday") {
         document.getElementById("friday-banner").style.display = "block";
     }
     else {
