@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Idaho | Optimal Sunshine</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/preston.css">
+    
+</head>
+<body>
+    <div class="content">
+        <div id="friday-banner">
+            <p>
+                Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.
+            </p>
+        </div>
+    <header>
+        <img src="images/rsz_updated-logo.png" alt="optimal sunshine logo" class="logo">
+        <h1 class="sunshine-header">Optimal Sunshine</h1>
+        <h3 class="tagline">Find Your Sunshine</h3>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="lesson6/index.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li> 
+            <li><a href="#">Storm Center</a></li>  
+            <li><a href="#">Gallery</a></li>  
+        </ul>
+    </nav>
+    <main>
+        <div class="empty"></div>
+        <h2 class="preston">Preston, Idaho</h2>
+        
+        <div class="div1">
+            <img src="images/cit230_image_franklin-600w.jpg" alt="preston image" class="town-pic" srcset="images/cit230_image_franklin-600w.jpg 600w, images/cit230_image_franklin-900w.jpg 900w, images/cit230_image_franklin-1300w.jpg 1300w">
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <table class="summary-content">
+                    <tbody>
+                        <tr>
+                            <th>Currently:</th>
+                            <td>Cloudy</td>
+                        </tr>
+                        <tr>
+                            <th>Temperature:</th>
+                            <td><span id="tempVal">55</span>&deg;F</td>
+                        </tr>
+                        <tr>
+                            <th>Wind Chill:</th>
+                            <td><span id="windchill">???</span>&deg;</td><
+                        </tr>
+                        <tr>
+                            <th>Wind Speed</th>
+                            <td><span id="windVal">5</span>mph</td>
+                        </tr>
+                        <tr>
+                            <th>Humidity</th>
+                            <td>47%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="forecast">
+            <div class="forecast-header"><h3>5 Day Weather Forecast</h3></div>
+            <div class="forecast-table">
+                <div class="icons">
+                    <img src="images/rsz_weather-icon.png" alt="weather icon">
+                    <p>70&deg;</p>
+                </div>
+                <div class="icons">
+                    <img src="images/rsz_weather-icon.png" alt="weather icon">
+                    <p>68&deg;</p>
+                </div>
+                <div class="icons">
+                    <img src="images/rsz_weather-icon.png" alt="weather icon">
+                    <p>69&deg;</p>
+                </div>
+                <div class="icons">
+                    <img src="images/rsz_weather-icon.png" alt="weather icon">
+                    <p>69&deg;</p>
+                </div>
+                <div class="icons">
+                    <img src="images/rsz_weather-icon.png" alt="weather icon">
+                    <p>70&deg;</p>
+                </div>
+            </div>
+        </div>
+        <div class="div3">
+            <h3>Preston Rodeo</h3>
+            <img src="images/rodeo-646573_1280.jpg" alt="girl barrel racing" class="rodeo-pic">
+            <p class="article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti voluptatibus fuga natus quas ut adipisci, nulla omnis repudiandae perspiciatis pariatur aspernatur cumque repellendus suscipit excepturi et saepe inventore impedit nisi.</p>
+        </div>
+        <div class="div4">
+            
+            <div class="contact">
+                <img src="images/map-screenshot.png" alt="map screenshot of location"></div>
+                <div class="contact-info">
+                    <h4>Optimal Sunshine</h4>
+                    <p>30 N 1st E<br>Preston, ID 83263</p>
+                    <p>208-555-5555</p>
+                    <p>contact@optimalsunshine.com</p>
+                    
+                    <a href="#"><img src="images/facebook-logo.png" alt="facebook logo"></a>
+                    <a href="#"><img src="images/instagram-logo.png" alt="instagram logo"></a>
+                    <a href="#"><img src="images/youtube-logo.png" alt="youtube-logo"></a>
+                </div>
+        </div>
+        <div class="empty"></div>
+    </main>
+    <footer>
+        <p> &copy; <span id="fullyear"></span> | Amber Jardine | <a href="https://developer.mozilla.org/en-US/" target="_blank" class="footer-link">MDN Documentation Site</a> | BYU-Idaho</p>
+        <div class="modified-div"><p>Last Updated: <span id="modified"></span></p></div>
+    </footer>
+    </div>
+
+    <script src="js/preston.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/preston.css">
     
 </head>
-<body onload="banner()">
+<body>
     <div class="content">
         <div id="friday-banner">
             <p>
@@ -39,10 +39,34 @@
             <img src="images/rsz_aerial-view-architecture-autumn-cars-280221.jpg" alt="aerial view of town" class="town-pic">
             <section class="summary">
                 <h3>Weather Summary</h3>
-                <div class="summary-content">
+                <!-- <div class="summary-content">
                     <p class="left" >Currently:<br>High:<br>Wind Chill:<br>Humidity:<br>Wind Speed:</p>
                     <p class="right">Partly Sunny<br>70 &deg;F<br>68 &deg;F<br>40%<br>8 mph</p>
-                </div>
+                </div>-->
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Currently:</th>
+                            <td>Cloudy</td>
+                        </tr>
+                        <tr>
+                            <th>Temperature:</th>
+                            <td><span id="tempVal">55</span>&deg;F</td>
+                        </tr>
+                        <tr>
+                            <th>Wind Chill</th>
+                            <td>53&deg;</td><
+                        </tr>
+                        <tr>
+                            <th>Wind Speed</th>
+                            <td><span id="windVal">5</span>mph</td>
+                        </tr>
+                        <tr>
+                            <th>Humidity</th>
+                            <td>47%</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </div>
         <div class="forecast">
