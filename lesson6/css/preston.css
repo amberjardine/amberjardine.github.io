@@ -137,6 +137,13 @@ table {
     margin: 0 auto;
     padding: 0;
 }
+th {
+    text-align: right;
+    padding-right: 5px;
+}
+tr {
+    text-align: left;
+}
 .forecast {
     display: none;
 }
@@ -160,7 +167,7 @@ table {
 .contact-info {
     border: none;
 }
-#friday-banner {
+#checkAds {
     background-color: #ffda48;
     text-align: center;
     line-height: 3.5em;

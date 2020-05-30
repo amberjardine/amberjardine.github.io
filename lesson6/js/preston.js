@@ -1,14 +1,23 @@
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
-function banner() {
-    let date = new Date();
-    let dateCheck = dayName[date.getDay()];
-    if (dateCheck === [5]) {
-        document.getElementById("friday-banner").style.display = "block";
+function checkAd() {
+    let dayName = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+    ];
+    let day = new Date();
+    let checkDay = dayName[dates.getDay()];
+    if(checkDay === 'Friday') {
+        document.getElementsById('checkAds').style.display = block;
     }
     else {
-        document.getElementById("friday-banner").style.display = "none";
+        document.getElementById('checkAds').style.display = none;
     }
 }
 
@@ -54,12 +63,19 @@ function dates() {
 }
 window.onload = dates;
 
-let temp = document.querySelector('#tempVal');
-let speed = document.querySelector('#windVal');
+
+document.getElementById("windchill").addEventListener("load", function() {
+    let speed = document.querySelector('#windVal');
+    let temp = document.querySelector('#tempVal');
+});
+
+
+
 
 
 //Calculate Windchill
 function buildWC(speed, temp) {
+    
     let wcTemp = document.getElementById("tempVal");
 
     //Compute windchill
