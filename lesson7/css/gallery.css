@@ -94,17 +94,32 @@ footer a {
     margin-top: 10px;
 }
 .empty {
-    height: 5px;
+    height: 25px;
     border: none;
 }
 .active {
     background-color: #ffda48;
     color: #252931;
 }
+figcaption {
+    display: none;
+}
+.pictures {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+}
+img {
+    width: 100%;
+}
+figure {
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    width: 60%;
+    margin: 0 auto;
+}
 
 @media screen and (min-width: 600px) {
     main div {
-        max-width: 600px;
         margin: 0 auto;
         margin-top: 10px;
     }
@@ -115,7 +130,7 @@ footer a {
         float: right;
         margin-right: 20px;
         margin-top: 30px;
-        font-size: 2.2em;
+        font-size: 2em;
     }
     .tagline {
         float: right;
@@ -145,13 +160,25 @@ footer a {
         text-align: center;
         font-size: 0.61em;
     }
+    .pictures {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+    }
+    img {
+        width: 100%;
+    }
+    figure {
+        width: 100%;
+    }
 }
 @media screen and (min-width: 950px) {
-    main div {
-        max-width: 850px;
-    }
     header {
         height: 220px;
+    }
+    .gallery {
+        font-size: 3em;
     }
     .sunshine-header {
         float: none;
@@ -172,5 +199,18 @@ footer a {
     }
     .navigation li a {
         font-size: 0.9em;
+    }
+    figcaption {
+        display: block;
+        text-align: center;
+        padding: 1px;
+    }
+    .pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+    figure:hover {
+        box-shadow: 4px 4px 10px rgba(0.5, 0.5, 0.5, 0.8);
     }
 }
