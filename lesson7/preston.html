@@ -37,7 +37,9 @@
         
         <div class="div1">
             <picture>
-                <img src="images/cit230_image_franklin-600w.jpg" alt="preston image" class="town-pic" srcset="images/cit230_image_franklin-600w.jpg 600w, images/cit230_image_franklin-900w.jpg 900w, images/cit230_image_franklin-1300w.jpg 1300w">
+                <source media="(min-width: 600px) and (max-width: 899px)" srcset="images/cit230_image_franklin-900w.jpg">
+                <source media="(min-width: 900px)" srcset="images/cit230_image_franklin-1300w.jpg">
+                <img src="images/cit230_image_franklin-600w.jpg" alt="preston image" class="town-pic">
             </picture>
             <section class="summary">
                 <h3>Weather Summary</h3>
