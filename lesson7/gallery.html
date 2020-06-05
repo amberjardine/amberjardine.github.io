@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Optimal Sunshine</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <div class="content">
+    <header>
+        <img src="images/rsz_updated-logo.png" alt="optimal sunshine logo" class="logo">
+        <h1 class="sunshine-header">Optimal Sunshine</h1>
+        <h3 class="tagline">Find Your Sunshine</h3>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li> 
+            <li><a href="#">Storm Center</a></li>  
+            <li class="active"><a href="gallery.html">Gallery</a></li>  
+        </ul>
+    </nav>
+    <main>
+        <div class="empty"></div>
+        <h2 class="gallery">Gallery</h2>
+        <div class="pictures">
+            <picture>
+                <img src="images/gallery/yellowstone-1589613_640.jpg" alt="storm">
+            </picture>
+            <picture>
+                <img src="images/gallery/winter-landscape-636634_640.jpg" alt="snowy landscape">
+            </picture>
+            <picture>
+                <img src="images/gallery/spring-4503686_640.jpg" alt="clouds over a field">
+            </picture>
+            <picture>
+                <img src="images/gallery/lightning-1056419_640.jpg" alt="lightning strike">
+            </picture>
+            <oicture>
+                <img src="images/gallery/lake-2983738_640.jpg" alt="foggy lake">
+            </oicture>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; <span id="fullyear"></span> | Amber Jardine | <a href="https://developer.mozilla.org/en-US/" target="_blank" class="footer-link">MDN Documentation Site</a> | BYU-Idaho</p>
+        <div class="modified-div"><p>Last Updated: <span id="modified"></span></p></div>
+    </footer>
+    </div>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
