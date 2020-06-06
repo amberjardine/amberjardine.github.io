@@ -29,7 +29,7 @@ images.forEach(image => {
     imgObserver.observe(image)
 })
 
-/*function dates() {
+function dates() {
    
 
     var today = new Date();
@@ -70,15 +70,4 @@ images.forEach(image => {
     
 }
 window.onload = dates;
-*/
-function dates() {
-    let n = new Date(document.lastModified);
 
-    document.getElementById("modified").innerHTML = n;
-
-    var today = new Date();
-    //var year = today.getFullYear(); 
-    
-    document.getElementById("fullyear").innerHTML = today.getFullYear();
-}
-window.onload = dates;
