@@ -102,7 +102,9 @@ footer a {
     color: #252931;
 }
 figcaption {
-    display: none;
+    display: block;
+    text-align: center;
+    padding: 5px 1px;
 }
 .pictures {
     display: grid;
@@ -200,11 +202,7 @@ figure {
     .navigation li a {
         font-size: 0.9em;
     }
-    figcaption {
-        display: block;
-        text-align: center;
-        padding: 1px;
-    }
+    
     .pictures {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
