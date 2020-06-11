@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Activity</title>
+</head>
+<body>
+    <main>
+        <h1>Form Activity</h1>
+        <form action="" method="get">
+            <!-- action = where the data goes-->
+            <!-- method = how the data moves to that location-->
+            <label for="fName">Full Name: </label>
+            <input type="text" name="fName" id="fName">
+            <span>Are you in danger?</span>
+            <label for="yes">Yes</label>
+            <input type="radio" name="danger" id="yes" value="yes">
+            <label for="no">No</label>
+            <input type="radio" name="danger" id="no" value="no">
+            <label for="maybe">Maybe</label>
+            <input type="radio" name="danger" id="maybe" value="maybe">
+
+            <label for="stormDate">Date: </label>
+            <input type="date" name="stormDate" id="stormDate">
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" name="phone" id="phone">
+
+            <label for="comment">Additional Comments</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    
+</body>
+</html>

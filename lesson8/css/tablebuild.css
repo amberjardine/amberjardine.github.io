@@ -33,7 +33,7 @@ td, th {
     padding-left: 5px;
     padding-right: 5px;
 }
-tr:nth-of-type(even) {
+tr:nth-of-type(odd) {
     background-color: #e7ffed;
 }
 .sales-goal {
