@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Rozha+One&display=swap');
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+.content {
+    background-color: #1a6697;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sunshine-header {
+    padding-left: 20px;
+    margin-top: -5px;
+}
+.tagline {
+    font-size: 1.5em;
+    padding-left: 20px;
+    margin-top: -15px;
+}
+main {
+    background-color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Rozha One", Georgia, serif;
+}
+nav {
+    font-family: Verdana, sans-serif;
+    margin: 0 auto;
+    background-color: #252931;
+    color: #53B3CB;
+    line-height: 2.3em;
+    margin-bottom: -16px;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+
+nav ul li a:hover {
+    background-color: #53B3CB;
+    color: #252931;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #53B3CB;
+    font-weight: 700;
+}
+
+.responsive li {
+    display: block;
+}
+.logo {
+    width: 100px;
+    border-radius: 25px;
+    margin: 15px;
+}
+header {
+    color: #ffda48;
+}
+footer {
+    line-height: 1.25em;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 1px;
+    font-size: 1.1em;
+    color: #3f4045;
+    color: #FFDA48;
+}
+footer a {
+    color: #53B3CB;
+}
+input, label {
+    display: block;
+}
+label>input {
+    display: inline;
+}
