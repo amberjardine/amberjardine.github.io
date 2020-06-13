@@ -97,7 +97,7 @@ footer {
 footer a {
     color: #53B3CB;
 }
-input, label, form span, textarea {
+input, label, form span, textarea, select {
     font-size: 1.1em;
     display: block;
     margin: 5px;
@@ -164,8 +164,37 @@ option {
     width: 200px;
     background-color: #e6e6e6;
 }
-
-
+.thanks-content {
+    height: 400px;
+    background-color: white;
+    border: 5px solid #FFDA48;
+}
+.thanks-content div {
+    border-top: 2px dotted #252931;
+    margin: 50px;
+    padding-top: 25px;
+}
+.thanks-content p {
+   margin: 50px;
+   text-align: center;
+   font-size: 1.5em;
+}
+.thanks-content h1 {
+    text-align: center;
+}
+select {
+    width: 150px;
+}
+.link-back {
+    text-align: center;
+    font-size: 1.1em;
+}
+#yes, #no, #maybe {
+    display: inline-block;
+    text-align: left;
+    width: 5%;
+    
+}
 
 @media screen and (min-width: 600px) {
     .form-items {
@@ -176,7 +205,7 @@ option {
         width: 100%;
         padding-top: 30px;
     }
-    input, label, form span, textarea {
+    input, label, form span, textarea, select {
         margin-left: 30px;
     }
     input {
@@ -244,4 +273,5 @@ option {
     input {
         width: 50%;
     }
+    
 }
