@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let banner = document.getElementById('checkAds');
     banner.innerHTML = checkAd();
+
+    
 });
 
 
@@ -69,10 +71,11 @@ function dates() {
     let year = d.getFullYear();
     let fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + year;
 
+    //return fulldate;
     document.getElementById("modified").textContent = fulldate;
     
 }
-window.onload = dates;
+//window.onload = dates;
 
 
 

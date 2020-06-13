@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/storm.css">
 </head>
 <body>
+    <div class="content">
     <header>
         <img src="images/rsz_updated-logo.png" alt="optimal sunshine logo" class="logo">
         <h1 class="sunshine-header">Optimal Sunshine</h1>
@@ -17,74 +18,80 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li class="active"><a href="../lesson6/index.html">Preston</a></li>
+            <li><a href="../lesson6/index.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li> 
-            <li><a href="stormcenter.html">Storm Center</a></li>  
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>  
             <li><a href="../lesson7/gallery.html">Gallery</a></li>  
         </ul>
     </nav>
     <main>
-        <h1>Storm Center</h1>
-        <form action="" method="get">
-            <!-- action = where the data goes-->
-            <!-- method = how the data moves to that location-->
-            <label for="fName">Full Name: </label>
-            <input type="text" name="fName" id="fName" pattern="[A-Za-z]{5,}" required>
+        <h1 class="storm-header">Storm Center</h1>
+        <div class="form-items">
+            <form action="" method="get">
+                <!-- action = where the data goes-->
+                <!-- method = how the data moves to that location-->
+                <label for="fName">Full Name: </label>
+                <input type="text" name="fName" id="fName" pattern="[A-Za-z]{5,}" required>
 
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" placeholder="example@email.com">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="example@email.com">
 
-            <label for="phone">Phone Number: </label>
-            <input type="number" name="phone" id="phone" required>
+                <label for="phone">Phone Number: </label>
+                <input type="number" name="phone" id="phone" required>
 
-            <label for="zip">Zip Code: </label>
-            <input type="number" name="zip" id="zip" required>
+                <label for="zip">Zip Code: </label>
+                <input type="number" name="zip" id="zip" required>
 
-            <label for="phone">Phone Number: </label>
-            <input type="tel" name="phone" id="phone">
+                <label for="stormDate">Storm Date: </label>
+                <input type="date" name="stormDate" id="stormDate">
 
-            <label for="stormDate">Storm Date: </label>
-            <input type="date" name="stormDate" id="stormDate">
-
-            <label for="stormType">Storm Type: </label>
-            <input list="type">
-            <datalist id="type">
-                <option value="Flash Flood"></option>
-                <option value="Hail"></option>
-                <option value="Hurricane"></option>
-                <option value="Thunderstorm"></option>
-                <option value="Tornado"></option>
-            </datalist>
+                <label for="stormType">Storm Type: </label>
+                <input list="type">
+                <datalist id="type">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+                
+                <label for="severity">Storm Severity: <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1" list="tickmarks"></label>
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
             
-            <label for="severity">Storm Severity: <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1" list="tickmarks"></label>
-            <datalist id="tickmarks">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-                <option value="5"></option>
-                <option value="6"></option>
-                <option value="7"></option>
-                <option value="8"></option>
-                <option value="9"></option>
-                <option value="10"></option>
-            </datalist>
-           
-            <span>Are you in danger?</span>
-            <label for="yes"><input type="radio" name="danger" id="yes" value="yes"> Yes</label>
-            
-            <label for="no"><input type="radio" name="danger" id="no" value="no"> No</label>
-            
-            <label for="maybe"><input type="radio" name="danger" id="maybe" value="maybe"> Maybe</label>
+                <span>Are you in danger?</span>
+                <label for="yes"><input type="radio" name="danger" id="yes" value="yes"> Yes</label>
+                
+                <label for="no"><input type="radio" name="danger" id="no" value="no"> No</label>
+                
+                <label for="maybe"><input type="radio" name="danger" id="maybe" value="maybe"> Maybe</label>
 
-            <label for="comment">Additional Comments</label>
-            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
+                <label for="comment">Additional Comments</label>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <div class="button">
+                <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
     </main>
-    
+    <div class="empty"></div>
+    <footer>
+        <p> &copy; <span id="fullyear"></span> | Amber Jardine | <a href="https://developer.mozilla.org/en-US/" target="_blank" class="footer-link">MDN Documentation Site</a> | BYU-Idaho</p>
+        <div class="modified-div"><p>Last Updated: <span id="modified"></span></p></div>
+    </footer>
+    </div>
+    <script src="js/storm.js"></script>
 </body>
 </html>

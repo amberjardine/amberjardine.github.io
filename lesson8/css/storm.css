@@ -30,7 +30,7 @@ nav {
     background-color: #252931;
     color: #53B3CB;
     line-height: 2.3em;
-    margin-bottom: -16px;
+    margin-bottom: -25px;
 }
 
 nav ul li a {
@@ -68,10 +68,19 @@ nav ul li a:hover {
 .responsive li {
     display: block;
 }
+.active {
+    background-color: #ffda48;
+    color: #252931;
+}
 .logo {
     width: 100px;
     border-radius: 25px;
     margin: 15px;
+}
+.empty {
+    height: 15px;
+    border: none;
+    background-color: white;
 }
 header {
     color: #ffda48;
@@ -88,9 +97,151 @@ footer {
 footer a {
     color: #53B3CB;
 }
-input, label {
+input, label, form span, textarea {
+    font-size: 1.1em;
     display: block;
+    margin: 5px;
 }
+input {
+    margin-bottom: 20px;
+    border: 2px solid darkgray;
+    color: #252931;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+}
+input:focus {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+/*input::placeholder {
+    color: rgba(26, 102, 151, 0.5);
+}
+input:focus::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}*/
 label>input {
     display: inline;
+}
+form {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(255, 218, 72, 0.9);
+    color: #252931;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 3px solid #1a6697;
+    border-radius: 25px;
+}
+.form-items {
+    display: block;
+    text-align: center;
+}
+.storm-header {
+    text-align: center;
+    padding: 15px;
+    font-size: 2.3em;
+}
+#comment {
+    width: 90%;
+}
+option {
+    color: #FFDA48;
+}
+.button {
+    display: block;
+    text-align: center;
+}
+.button input {
+    width: 80px;
+    margin: 10px auto;
+}
+
+#severity {
+    color: #FFDA48;
+    display: block;
+    width: 200px;
+    background-color: #e6e6e6;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .form-items {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    form {
+        width: 100%;
+        padding-top: 30px;
+    }
+    input, label, form span, textarea {
+        margin-left: 30px;
+    }
+    input {
+        width: 70%;
+    }
+    .sunshine-header {
+        float: right;
+        margin-right: 20px;
+        margin-top: 30px;
+        font-size: 2.2em;
+    }
+    .tagline {
+        float: right;
+        margin-top: -150px;
+        margin-right: 21px;
+    }
+    .logo {
+        width: 200px;
+    }
+    nav {
+        line-height: 2em;
+    }
+    .navigation{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+        justify-content: space-evenly;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+       display: inline;
+
+    }
+    .navigation li a {
+        display: block;
+        text-align: center;
+        font-size: 0.61em;
+    }
+}
+@media screen and (min-width: 950px) {
+    header {
+        height: 220px;
+    }
+    .sunshine-header {
+        float: none;
+        font-size: 3em;
+        text-align: center;
+        margin-top: -180px;
+    }
+    .tagline {
+        margin-top: 15px;
+        float: none;
+        text-align: center;
+        font-size: 2em;
+    }
+    .content {
+        max-width: 90%;
+        margin: 0 auto;
+        border-radius: 25px;
+    }
+    .navigation li a {
+        font-size: 0.9em;
+    }
+    input {
+        width: 50%;
+    }
 }
