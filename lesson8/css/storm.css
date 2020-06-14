@@ -159,7 +159,7 @@ option {
 }
 
 #severity {
-    color: #FFDA48;
+    color: #1a6697;
     display: block;
     width: 200px;
     background-color: #e6e6e6;
@@ -194,6 +194,9 @@ select {
     text-align: left;
     width: 5%;
     
+}
+output {
+    display: inline;
 }
 
 @media screen and (min-width: 600px) {
