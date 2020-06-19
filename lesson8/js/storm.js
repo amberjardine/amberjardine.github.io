@@ -15,7 +15,7 @@ function year() {
     var today = new Date();
     
      return today.getFullYear();
-    //document.getElementById("fullyear").innerHTML = today.getFullYear();
+    
 }
 function modified() {
 
@@ -50,14 +50,6 @@ function modified() {
     let fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + year;
 
     return fulldate;
-
-    //document.getElementById("modified").textContent = fulldate;
     
 }
 
-
-//window.onload = dates;
-
-//function changeColor() {
-
-//}
