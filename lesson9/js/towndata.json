@@ -2,7 +2,7 @@
     "towns": [
       {
         "name": "Franklin",
-        "photo": "franklin.jpg",
+        "photo": "images/franklin.jpg",
         "motto": "Where you will grow!",
         "yearFounded": 1788,
         "currentPopulation": 30458,
@@ -15,7 +15,7 @@
       },
       {
         "name": "Fish Haven",
-        "photo": "fishhaven.jpg",
+        "photo": "images/fishhaven.jpg",
         "motto": "This is Fish Heaven.",
         "yearFounded": 1864,
         "currentPopulation": 501,
@@ -29,7 +29,7 @@
       },
       {
         "name": "Greenville",
-        "photo": "greenville.jpg",
+        "photo": "images/greenville.jpg",
         "motto": "Green is our way of life.",
         "yearFounded": 1805,
         "currentPopulation": 33458,
@@ -55,7 +55,7 @@
       },
       {
         "name": "Preston",
-        "photo": "preston.jpg",
+        "photo": "images/preston.jpg",
         "motto": "Home of Napoleon Dynamite.",
         "yearFounded": 1866,
         "currentPopulation": 5204,
@@ -68,7 +68,7 @@
       },
       {
         "name": "Soda Springs",
-        "photo": "sodasprings.jpg",
+        "photo": "images/sodasprings.jpg",
         "motto": "Historic Oregon Trail Oasis.",
         "yearFounded": 1858,
         "currentPopulation": 2985,
