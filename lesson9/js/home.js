@@ -53,3 +53,44 @@ function modified() {
     
 }
 
+const requestURL = 'js/towndata.json'
+
+fetch(requestURL) 
+    .then(function (response) {
+        if (response.ok) {
+            return response.json();
+        }
+        throw new ERROR ('Network response was not ok');
+    })
+    .then (function (jsonObject) {
+        console.log(jsonObject);
+        let towns = jsonObject['towns'];
+        
+        for(i = 0, x = towns.length; i < x; i++){
+            let card = document.createElement('section');
+            let article = document.createElement('article');
+            let h2 = document.createElement('h2');
+            let h4 = document.createElement('h4');
+            let p1 = document.createElement('p');
+            let p2 = document.createElement('p');
+            let p3 = document.createElement('p');
+            let image = document.createElement('img');
+
+            h2.textContent = towns[i].name;
+            h4.textContent = towns[i].motto;
+            p1.textContent = "Year Founded: " + towns[i].yearFounded;
+            p2.textContent = "Population: " + towns[i].currentPopulation;
+            p3.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
+            image.setAttribute('src', towns[i].photo);
+
+            article.appendChild(h2);
+            article.appendChild(h4);
+            article.appendChild(p1);
+            article.appendChild(p2);
+            article.appendChild(p3);
+            card.appendChild(image);
+            card.appendChild(article);
+
+            document.querySelector('div.towns').appendChild(card);
+        }
+    })
