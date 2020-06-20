@@ -61,7 +61,7 @@ nav ul li a:hover {
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: #53B3CB;
+    color: rgb(122, 249, 253);
     font-weight: 700;
 }
 
@@ -69,8 +69,9 @@ nav ul li a:hover {
     display: block;
 }
 .active {
-    background-color: #ffda48;
+    background-color: #1a6697;
     color: #252931;
+    border: 2px solid rgb(122, 249, 253);
 }
 .logo {
     width: 100px;
@@ -91,17 +92,15 @@ footer {
     padding-bottom: 15px;
     padding-top: 1px;
     font-size: 1.1em;
-    color: #3f4045;
     color: #FFDA48;
 }
 footer a {
-    color: #53B3CB;
+    color: rgb(122, 249, 253);
 }
 section {
     text-align: center;
     background-color: #1a6697;
     color: #FFDA48;
-
     border-radius: 25px;
 }
 

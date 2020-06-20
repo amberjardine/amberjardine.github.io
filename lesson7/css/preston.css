@@ -61,7 +61,7 @@ nav ul li a:hover {
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: #53B3CB;
+    color: rgb(122, 249, 253);
     font-weight: 700;
 }
 
@@ -86,7 +86,7 @@ footer {
     color: #FFDA48;
 }
 footer a {
-    color: #53B3CB;
+    color: rgb(122, 249, 253);
 }
 main div {
     padding: 5px;
@@ -103,8 +103,8 @@ main div {
     margin-top: 10px;
 }
 .active {
-    background-color: #ffda48;
-    color: #252931;
+    background-color: #1a6697;
+    border: 2px solid rgb(122, 249, 253); 
 }
 .town-pic {
    width: 100%;
