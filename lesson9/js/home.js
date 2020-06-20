@@ -81,7 +81,9 @@ fetch(requestURL)
             p1.textContent = "Year Founded: " + towns[i].yearFounded;
             p2.textContent = "Population: " + towns[i].currentPopulation;
             p3.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
+
             image.setAttribute('src', towns[i].photo);
+            image.setAttribute('alt', towns[i].name + " Image");
 
             article.appendChild(h2);
             article.appendChild(h4);
