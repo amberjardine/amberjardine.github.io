@@ -63,7 +63,7 @@ fetch(requestURL)
         throw new ERROR ('Network response was not ok');
     })
     .then (function (jsonObject) {
-        console.log(jsonObject);
+        //console.log(jsonObject);
         let towns = jsonObject['towns'];
         
         for(i = 0, x = towns.length; i < x; i++){
