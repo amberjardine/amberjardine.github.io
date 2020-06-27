@@ -46,8 +46,8 @@
                 <table class="summary-content">
                     <tbody>
                         <tr>
-                            <th>Currently:</th>
-                            <td>Cloudy</td>
+                            <th>Condition:</th>
+                            <td><span id ="condition"></span></td>
                         </tr>
                         <tr>
                             <th>Temperature:</th>
@@ -55,44 +55,27 @@
                         </tr>
                         <tr>
                             <th>Wind Chill:</th>
-                            <td><span id="windchill">???</span>&deg;</td>
+                            <td><span id="windchill"></span>&deg;</td>
                         </tr>
                         <tr>
                             <th>Wind Speed:</th>
-                            <td><span id="windVal">5</span>mph</td>
+                            <td><span id="windVal"></span>mph</td>
                         </tr>
                         <tr>
                             <th>Humidity:</th>
-                            <td>47%</td>
+                            <td><span id="humidity"></span>%</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
         </div>
         <div class="forecast">
-            <div class="forecast-header"><h3>5 Day Weather Forecast</h3></div>
-            <div class="forecast-table">
-                <div class="icons">
-                    <img src="images/rsz_weather-icon.png" alt="weather icon">
-                    <p>70&deg;</p>
-                </div>
-                <div class="icons">
-                    <img src="images/rsz_weather-icon.png" alt="weather icon">
-                    <p>68&deg;</p>
-                </div>
-                <div class="icons">
-                    <img src="images/rsz_weather-icon.png" alt="weather icon">
-                    <p>69&deg;</p>
-                </div>
-                <div class="icons">
-                    <img src="images/rsz_weather-icon.png" alt="weather icon">
-                    <p>69&deg;</p>
-                </div>
-                <div class="icons">
-                    <img src="images/rsz_weather-icon.png" alt="weather icon">
-                    <p>70&deg;</p>
-                </div>
-            </div>
+            
+        <div class="forecast-header"><h3>5 Day Weather Forecast</h3></div>
+        
+        <div id="forecastData">
+        </div>
+
         </div>
         <div class="div3">
             <h3>Preston Rodeo</h3>
