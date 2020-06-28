@@ -150,7 +150,7 @@ fetch(apiURL)
 
 
 //function cityForecast(cityId) {
-    const cityAPI = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=1f3ebf09943a56765ce811a27bac5a31&units=imperial';
+    const cityAPI = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=1f3ebf09943a56765ce811a27bac5a31&units=imperial';
 
     fetch(cityAPI)
         .then(function (response) {
