@@ -125,7 +125,7 @@ const apiURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=
 fetch(apiURL)
     .then((response) => response.json())
     .then ((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
         document.querySelector('#current-temp').textContent = Math.round(jsObject.main.temp);
         document.querySelector('#windVal').textContent = Math.round(jsObject.wind.speed);
         document.querySelector('#humidity').textContent = jsObject.main.humidity;
@@ -160,7 +160,7 @@ fetch(apiURL)
             throw new ERROR('Network response was not OK');
         })
         .then(jsObject => {
-            console.log(jsObject);
+            //console.log(jsObject);
 
             let forecastData = document.querySelector('#forecastData');
             let forecastDay = document.querySelector('#forecastDay');
