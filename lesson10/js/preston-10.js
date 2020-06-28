@@ -120,7 +120,7 @@ function buildWC(speed, temp) {
 }
 
 //Weather API
-const apiURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=1f3ebf09943a56765ce811a27bac5a31&units=imperial';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=1f3ebf09943a56765ce811a27bac5a31&units=imperial';
 
 fetch(apiURL)
     .then((response) => response.json())
