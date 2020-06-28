@@ -280,7 +280,8 @@ tr {
         color: white;
         padding: 0;
         margin: 0 auto;
-        margin-bottom: -15px;
+        margin-bottom: -5px;
+        font-size: 1.2em;
     }
     .icons {
         border: none;
@@ -301,11 +302,15 @@ tr {
     }
     #forecastData {
         background-color: #FFDA48;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
         border: 2px solid black;
         margin-bottom: 20px;
+        margin: auto;
+        width: 100%;
+        table-layout: auto;
+    }
+    #forecastData th {
+        text-align: center;
+        padding-top: 20px;
     }
     #forecastData img {
         background-color: lightgrey;
@@ -315,6 +320,7 @@ tr {
         box-shadow: 2px 4px 8px rgba(20, 20, 20, 0.9);
 
     }
+    
 
     
 }

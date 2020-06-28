@@ -163,6 +163,7 @@ fetch(apiURL)
             console.log(jsObject);
 
             let forecastData = document.querySelector('#forecastData');
+            let forecastDay = document.querySelector('#forecastDay');
 
             jsObject.list.forEach(element => {
                 if(element.dt_txt.includes('18:00:00')) {
@@ -183,12 +184,12 @@ fetch(apiURL)
                 forecastData.appendChild(tdata);
 
                 forecastDays.textContent = dayOfWeek(element.dt_txt);
+                forecastDay.append(forecastDays);
             }
             })
         })
             
-function dayOfWeek() {
-    let d = new Date();
+function dayOfWeek(day) {
     let dayArray = [
         "Sun",
         "Mon",
@@ -198,7 +199,8 @@ function dayOfWeek() {
         "Fri",
         "Sat"
     ];
+    let d = new Date(day);
     let dayName = dayArray[d.getDay()];
-    let nameDay = '${dayName}';
-    return nameDay;
+    let nameOfDay = `${dayName}`
+    return dayName;
 }
