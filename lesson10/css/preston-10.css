@@ -223,6 +223,7 @@ tr {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 25px;
+        border: none;
     }
     .rodeo-pic {
         display: inline;
@@ -245,6 +246,7 @@ tr {
     }
     .div1 {
         position: relative;
+        border: none;
     }
     .summary {
         margin: 10px auto;
