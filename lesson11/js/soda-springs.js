@@ -218,34 +218,33 @@ fetch(requestURL)
         //console.log(jsonObject);
         let towns = jsonObject['towns'];
         
-        for(i = 0, x = towns.events.length; i < x; i++){
+        for(i = 0, x = towns.length; i < x; i++){
             if (towns[i].name == "Soda Springs") {
             let card = document.createElement('section');
-            let article = document.createElement('article');
+            let article = document.createElement('ul');
             let h2 = document.createElement('h2');
-            let p1 = document.createElement('p');
-            let p2 = document.createElement('p');
-            let p3 = document.createElement('p');
-            let image = document.createElement('img');
 
-            h2.textContent = towns[i].name;
-            h4.textContent = towns[i].motto;
-            p1.textContent = "Year Founded: " + towns[i].yearFounded;
-            p2.textContent = "Population: " + towns[i].currentPopulation;
-            p3.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
+            h2.textContent = "Events:";
 
-            image.setAttribute('src', towns[i].photo);
-            image.setAttribute('alt', towns[i].name + " Image");
+            let events = towns[i].events;
+            for (j = 0, y = events.length; j < y; j++) {
+                var li = document.createElement('li');
+                li.textContent = events[j];
+                article.appendChild(li);
+            }
 
-            article.appendChild(h2);
-            article.appendChild(h4);
-            article.appendChild(p1);
-            article.appendChild(p2);
-            article.appendChild(p3);
-            card.appendChild(image);
+
+            
+
+            card.appendChild(h2);
             card.appendChild(article);
 
             document.querySelector('div.events').appendChild(card);
+
+            
         }
         }
+    })
+    .catch(function (error) {
+        console.log('Fetch error: ', error.message);
     })

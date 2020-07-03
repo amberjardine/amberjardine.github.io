@@ -91,7 +91,6 @@ footer a {
 main div {
     padding: 5px;
     margin: 10px;
-    border-top: 2px dotted #252931;
     text-align: center;
 }
 .empty {
@@ -120,6 +119,8 @@ main div {
     width: 80%;
     height: 150px;
     padding-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .summary h3 {
     margin-top: 10px;
@@ -174,6 +175,30 @@ tr {
     margin-bottom: -18px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+}
+
+.events-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #53B3CB;
+    color: black;
+    border: 2px solid black;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.events li {
+    padding-bottom: 5px;
+}
+.events h2 {
+   text-align: center; 
 }
 
 @media screen and (min-width: 600px) {
@@ -322,6 +347,10 @@ tr {
         box-shadow: 2px 4px 8px rgba(20, 20, 20, 0.9);
 
     }
+    .events {
+        width: 70%;
+        font-size: 1.1em;
+    }
     
 
     
@@ -358,5 +387,9 @@ tr {
     }
     .article {
         padding-bottom: 100px;
+    }
+    .events {
+        width: 50%;
+        font-size: 1.2em;
     }
 }

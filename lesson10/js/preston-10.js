@@ -204,3 +204,47 @@ function dayOfWeek(day) {
     let nameOfDay = `${dayName}`
     return dayName;
 }
+
+const requestURL = 'js/towndata.json'
+
+fetch(requestURL) 
+    .then(function (response) {
+        if (response.ok) {
+            return response.json();
+        }
+        throw new ERROR ('Network response was not ok');
+    })
+    .then (function (jsonObject) {
+        //console.log(jsonObject);
+        let towns = jsonObject['towns'];
+        
+        for(i = 0, x = towns.length; i < x; i++){
+            if (towns[i].name == "Preston") {
+            let card = document.createElement('section');
+            let article = document.createElement('ul');
+            let h2 = document.createElement('h2');
+
+            h2.textContent = "Events:";
+
+            let events = towns[i].events;
+            for (j = 0, y = events.length; j < y; j++) {
+                var li = document.createElement('li');
+                li.textContent = events[j];
+                article.appendChild(li);
+            }
+
+
+            
+
+            card.appendChild(h2);
+            card.appendChild(article);
+
+            document.querySelector('div.events').appendChild(card);
+
+            
+        }
+        }
+    })
+    .catch(function (error) {
+        console.log('Fetch error: ', error.message);
+    })
