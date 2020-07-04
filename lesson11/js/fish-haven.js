@@ -165,6 +165,9 @@ fetch(apiURL)
             let forecastData = document.querySelector('#forecastData');
             let forecastDay = document.querySelector('#forecastDay');
 
+            forecastData.innerHTML = '';
+            forecastDay.innerHTML = '';
+
             jsObject.list.forEach(element => {
                 if(element.dt_txt.includes('18:00:00')) {
                     let forecastDays = document.createElement('th');
@@ -219,7 +222,7 @@ fetch(requestURL)
         let towns = jsonObject['towns'];
         
         for(i = 0, x = towns.length; i < x; i++){
-            if (towns[i].name == "Fish Haven") {
+            if (towns[i].name == "Soda Springs") {
             let card = document.createElement('section');
             let article = document.createElement('ul');
             let h2 = document.createElement('h2');

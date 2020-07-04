@@ -165,6 +165,9 @@ fetch(apiURL)
             let forecastData = document.querySelector('#forecastData');
             let forecastDay = document.querySelector('#forecastDay');
 
+            forecastData.innerHTML = '';
+            forecastDay.innerHTML = '';
+
             jsObject.list.forEach(element => {
                 if(element.dt_txt.includes('18:00:00')) {
                     let forecastDays = document.createElement('th');
