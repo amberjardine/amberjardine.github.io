@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Rozha+One&display=swap');
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+.content {
+    background-color: #1a6697;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sunshine-header {
+    padding-left: 20px;
+    margin-top: -5px;
+}
+.tagline {
+    font-size: 1.5em;
+    padding-left: 20px;
+    margin-top: -15px;
+}
+main {
+    background-color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Rozha One", Georgia, serif;
+}
+nav {
+    font-family: Verdana, sans-serif;
+    margin: 0 auto;
+    background-color: #252931;
+    color: #53B3CB;
+    line-height: 2.3em;
+    margin-bottom: -25px;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+
+nav ul li a:hover {
+    background-color: #53B3CB;
+    color: #252931;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: rgb(122, 249, 253);
+    font-weight: 700;
+}
+
+.responsive li {
+    display: block;
+}
+.active {
+    background-color: #1a6697;
+    border: 2px solid rgb(122, 249, 253);
+}
+.logo {
+    width: 100px;
+    border-radius: 25px;
+    margin: 15px;
+}
+.empty {
+    height: 15px;
+    border: none;
+    background-color: white;
+}
+header {
+    color: #ffda48;
+}
+footer {
+    line-height: 1.25em;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 1px;
+    font-size: 1.1em;
+    color: #3f4045;
+    color: #FFDA48;
+}
+footer a {
+    color: rgb(122, 249, 253);
+}
+input, label, form span, textarea, select {
+    font-size: 1.1em;
+    display: block;
+    margin: 5px;
+}
+input {
+    margin-bottom: 20px;
+    border: 2px solid darkgray;
+    color: #252931;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+}
+input:focus {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+/*input::placeholder {
+    color: rgba(26, 102, 151, 0.5);
+}
+input:focus::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}*/
+label>input {
+    display: inline;
+}
+form {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(255, 218, 72, 0.9);
+    color: #252931;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 3px solid #1a6697;
+    border-radius: 25px;
+}
+.form-items {
+    display: block;
+    text-align: center;
+}
+.storm-header {
+    text-align: center;
+    padding: 15px;
+    font-size: 2.3em;
+}
+#comment {
+    width: 90%;
+}
+option {
+    color: #FFDA48;
+}
+.button {
+    display: block;
+    text-align: center;
+}
+.button input {
+    width: 80px;
+    margin: 10px auto;
+}
+
+#severity {
+    color: #1a6697;
+    display: block;
+    width: 200px;
+    background-color: #e6e6e6;
+}
+.thanks-content {
+    height: 400px;
+    background-color: white;
+    border: 5px solid #FFDA48;
+}
+.thanks-content div {
+    border-top: 2px dotted #252931;
+    margin: 50px;
+    padding-top: 25px;
+}
+.thanks-content p {
+   margin: 50px;
+   text-align: center;
+   font-size: 1.5em;
+}
+.thanks-content h1 {
+    text-align: center;
+}
+select {
+    width: 150px;
+}
+.link-back {
+    text-align: center;
+    font-size: 1.1em;
+}
+#yes, #no, #maybe {
+    display: inline-block;
+    text-align: left;
+    width: 5%;
+    
+}
+output {
+    display: inline;
+}
+
+@media screen and (min-width: 600px) {
+    .form-items {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    form {
+        width: 100%;
+        padding-top: 30px;
+    }
+    input, label, form span, textarea, select {
+        margin-left: 30px;
+    }
+    input {
+        width: 70%;
+    }
+    .sunshine-header {
+        float: right;
+        margin-right: 20px;
+        margin-top: 30px;
+        font-size: 2.2em;
+    }
+    .tagline {
+        float: right;
+        margin-top: -150px;
+        margin-right: 21px;
+    }
+    .logo {
+        width: 200px;
+    }
+    nav {
+        line-height: 2em;
+    }
+    .navigation{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+        justify-content: space-evenly;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+       display: inline;
+
+    }
+    .navigation li a {
+        display: block;
+        text-align: center;
+        font-size: 0.61em;
+    }
+}
+@media screen and (min-width: 950px) {
+    header {
+        height: 220px;
+    }
+    .sunshine-header {
+        float: none;
+        font-size: 3em;
+        text-align: center;
+        margin-top: -180px;
+    }
+    .tagline {
+        margin-top: 15px;
+        float: none;
+        text-align: center;
+        font-size: 2em;
+    }
+    .content {
+        max-width: 90%;
+        margin: 0 auto;
+        border-radius: 25px;
+    }
+    .navigation li a {
+        font-size: 0.9em;
+    }
+    input {
+        width: 50%;
+    }
+    
+}

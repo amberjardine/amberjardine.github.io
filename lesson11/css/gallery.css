@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Rozha+One&display=swap');
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+.content {
+    background-color: #1a6697;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 90%;
+}
+.sunshine-header {
+    padding-left: 20px;
+    margin-top: -5px;
+}
+.tagline {
+    font-size: 1.5em;
+    padding-left: 20px;
+    margin-top: -15px;
+}
+main {
+    background-color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Rozha One", Georgia, serif;
+}
+nav {
+    font-family: Verdana, sans-serif;
+    margin: 0 auto;
+    background-color: #252931;
+    color: #53B3CB;
+    line-height: 2.3em;
+    margin-bottom: -16px;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+
+nav ul li a:hover {
+    background-color: #53B3CB;
+    color: #252931;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: rgb(122, 249, 253);
+    font-weight: 700;
+}
+
+.responsive li {
+    display: block;
+}
+.logo {
+    width: 100px;
+    border-radius: 25px;
+    margin: 15px;
+}
+header {
+    color: #ffda48;
+}
+footer {
+    line-height: 1.25em;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 1px;
+    font-size: 1.1em;
+    color: #3f4045;
+    color: #FFDA48;
+}
+footer a {
+    color: rgb(122, 249, 253);
+}
+.gallery {
+    text-align: center;
+    margin-top: 10px;
+}
+.empty {
+    height: 25px;
+    border: none;
+}
+.active {
+    background-color: #1a6697;
+    border: 2px solid rgb(122, 249, 253); 
+}
+figcaption {
+    display: block;
+    text-align: center;
+    padding: 5px 1px;
+}
+.pictures {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+}
+img {
+    width: 100%;
+}
+figure {
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+    main div {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .gallery {
+        font-size: 2.5em;
+    }
+    .sunshine-header {
+        float: right;
+        margin-right: 20px;
+        margin-top: 30px;
+        font-size: 2em;
+    }
+    .tagline {
+        float: right;
+        margin-top: -150px;
+        margin-right: 21px;
+    }
+    .logo {
+        width: 200px;
+    }
+    nav {
+        line-height: 2em;
+    }
+    .navigation{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+        justify-content: space-evenly;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+       display: inline;
+
+    }
+    .navigation li a {
+        display: block;
+        text-align: center;
+        font-size: 0.61em;
+    }
+    .pictures {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+    }
+    img {
+        width: 100%;
+    }
+    figure {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 950px) {
+    header {
+        height: 220px;
+    }
+    .gallery {
+        font-size: 3em;
+    }
+    .sunshine-header {
+        float: none;
+        font-size: 3em;
+        text-align: center;
+        margin-top: -180px;
+    }
+    .tagline {
+        margin-top: 15px;
+        float: none;
+        text-align: center;
+        font-size: 2em;
+    }
+    .content {
+        max-width: 90%;
+        margin: 0 auto;
+        border-radius: 25px;
+    }
+    .navigation li a {
+        font-size: 0.9em;
+    }
+    
+    .pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+    figure:hover {
+        box-shadow: 4px 4px 10px rgba(0.5, 0.5, 0.5, 0.8);
+    }
+}
